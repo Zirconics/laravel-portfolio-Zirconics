@@ -4,7 +4,13 @@ namespace App\Http\Controllers;
 
 class FaqController
 {
-    public function show() {
+    /**
+     * Method that returns the FaQ view
+     *
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function show()
+    {
         return view('faq');
     }
 }

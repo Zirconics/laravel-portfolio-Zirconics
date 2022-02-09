@@ -4,6 +4,12 @@ namespace App\Http\Controllers;
 
 class BlogController
 {
+    /**
+     * Method that returns which blog view should be loaded.
+     *
+     * @param $blog
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function show($blog)
     {
         $blogs = [
