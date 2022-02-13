@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
-USE App\Models\Faq;
+use App\Models\Faq;
 
 class FaqController
 {
