@@ -69,16 +69,18 @@
 
                     @foreach($faqs as $faqIndex => $faq)
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
+                        <h2 class="accordion-header" id="flush-heading{!! $faq->bootstrap_index !!}">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne"
-                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                    data-bs-target="#flush-collapse{!! $faq->bootstrap_index !!}"
+                                    aria-expanded="false" aria-controls="flush-collapse{!! $faq->bootstrap_index !!}">
                                 {{ $faq->question }}
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        <div id="flush-collapse{!! $faq->bootstrap_index !!}" class="accordion-collapse collapse" aria-labelledby="flush-heading{!! $faq->bootstrap_index !!}"
                              data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
                                 {!! $faq->answer !!}
+                            </div>
                         </div>
                     </div>
                     @endforeach
@@ -102,6 +104,7 @@
 {{--                            </div>--}}
 {{--                        </div>--}}
 {{--                    </div>--}}
+
 {{--                    <div class="accordion-item">--}}
 {{--                        <h2 class="accordion-header" id="flush-headingTwo">--}}
 {{--                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"--}}
@@ -125,7 +128,6 @@
 {{--                                    <li>Press the green Start button on the printer to scan page by page. Once this is ready, press--}}
 {{--                                        Start Sending.</li>--}}
 {{--                                </ol>--}}
-
 {{--                                <p>When scanning is finished you can logout.</p>--}}
 {{--                            </div>--}}
 {{--                        </div>--}}
