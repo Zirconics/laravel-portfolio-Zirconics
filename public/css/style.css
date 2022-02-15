@@ -368,3 +368,8 @@ a.sideNav-button{
     padding: 10px;
     margin: 2px;
 }
+
+.active{
+    color: white;
+    font-weight: bold;
+}

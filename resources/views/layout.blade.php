@@ -31,16 +31,16 @@
         <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="@yield('wildcard-addition')dashboard">Dashboard</a>
+                    <a class="nav-link {{ Request::path() === 'dashboard' ? 'active' : '' }}" href="@yield('wildcard-addition')dashboard">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="@yield('wildcard-addition')profile">Profile</a>
+                    <a class="nav-link {{ Request::path() === 'profile' ? 'active' : '' }}" href="@yield('wildcard-addition')profile">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="@yield('wildcard-addition')faq">FaQ</a>
+                    <a class="nav-link {{ Request::path() === 'faq' ? 'active' : '' }}" href="@yield('wildcard-addition')faq">FaQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="@yield('wildcard-addition')blogs/overview">Blog</a>
+                    <a class="nav-link {{ Request::is('blogs*') ? 'active' : '' }}" href="@yield('wildcard-addition')blogs/overview">Blog</a>
                 </li>
             </ul>
         </div>
