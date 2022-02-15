@@ -257,3 +257,7 @@
         </div>
     </main>
 @endsection
+
+@section('script')
+    <script src="js/changeTable.js"></script>
+@endsection
