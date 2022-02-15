@@ -81,7 +81,7 @@
                         @foreach($articles as $article)
                             <li class="text-white nav-link">
                                 <h3>
-                                    <a href="/articles/{{ $article->id }}">{{ $article->title }}</a>
+                                    <a href="/blogs/{{ $article->id }}">{{ $article->title }}</a>
                                 </h3>
                                 <p>{{ $article->excerpt }}</p>
                             </li>

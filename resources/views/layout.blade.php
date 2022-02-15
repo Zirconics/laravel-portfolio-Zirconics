@@ -40,7 +40,7 @@
                     <a class="nav-link {{ Request::path() === 'faq' ? 'active' : '' }}" href="/faq">FaQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('blogs*') ? 'active' : '' }}" href="/blogs/overview">Blog</a>
+                    <a class="nav-link {{ Request::is('blogs*') ? 'active' : '' }}" href="/blogs">Blog</a>
                 </li>
             </ul>
         </div>

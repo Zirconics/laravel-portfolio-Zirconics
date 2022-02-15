@@ -35,7 +35,9 @@ Route::get('faq', [FaqController::class, 'show']);
 Route::get('profile', [ProfileController::class, 'show']);
 
 // Blog page
-Route::get('blogs/{blog}', [BlogController::class, 'show']);
+//Route::get('blogs/{blog}', [BlogController::class, 'blogs']);
+Route::get('blogs/{article}', [BlogController::class, 'show']);
+Route::get('blogs', [BlogController::class, 'index']);
 
-// Articles
+// Blogs
 Route::get('articles/{article}', [ArticlesController::class, 'show']);
