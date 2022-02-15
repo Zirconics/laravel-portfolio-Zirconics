@@ -70,6 +70,27 @@
             </div>
         </section>
 
+        <!-- Third paragraph -->
+        <section class="frontpage-paragraph">
+            <div class="container-lg">
+                <div class="row g-5 justify-content-center align-items-center front-page-paragraph">
+                    <div class="col-md-5 text-center text-md-start">
+                        <h1>
+                            <div class="h1-white-bold">「Articles」</div>
+                        </h1>
+                        @foreach($articles as $article)
+                            <li class="text-white nav-link">
+                                <h3>
+                                    <a href="/articles/{{ $article->id }}">{{ $article->title }}</a>
+                                </h3>
+                                <p>{{ $article->excerpt }}</p>
+                            </li>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- List of clickable buttons -->
         <section class="ListOfItems">
             <div class="container">

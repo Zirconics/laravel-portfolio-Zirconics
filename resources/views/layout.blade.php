@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="@yield('wildcard-addition')css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <title>Kevin - Portfolio</title>
 </head>
@@ -18,7 +18,7 @@
     <div class="container-xxl">
         <!-- Page title / brand -->
         <a href="/" class="navbar-brand">
-            <img src="@yield('wildcard-addition')img/logoHZ.png" alt="logo hz" />
+            <img src="/img/logoHZ.png" alt="logo hz" />
         </a>
 
         <!-- collapsed navbar button (mobile) -->
@@ -31,16 +31,16 @@
         <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::path() === 'dashboard' ? 'active' : '' }}" href="@yield('wildcard-addition')dashboard">Dashboard</a>
+                    <a class="nav-link {{ Request::path() === 'dashboard' ? 'active' : '' }}" href="/dashboard">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::path() === 'profile' ? 'active' : '' }}" href="@yield('wildcard-addition')profile">Profile</a>
+                    <a class="nav-link {{ Request::path() === 'profile' ? 'active' : '' }}" href="/profile">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::path() === 'faq' ? 'active' : '' }}" href="@yield('wildcard-addition')faq">FaQ</a>
+                    <a class="nav-link {{ Request::path() === 'faq' ? 'active' : '' }}" href="/faq">FaQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('blogs*') ? 'active' : '' }}" href="@yield('wildcard-addition')blogs/overview">Blog</a>
+                    <a class="nav-link {{ Request::is('blogs*') ? 'active' : '' }}" href="/blogs/overview">Blog</a>
                 </li>
             </ul>
         </div>

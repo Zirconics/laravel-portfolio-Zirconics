@@ -1,9 +1,5 @@
 @extends('layout')
 
-@section('wildcard-addition')
-    /
-@endsection
-
 @section('content')
     <main>
 

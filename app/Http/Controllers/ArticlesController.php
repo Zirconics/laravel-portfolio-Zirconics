@@ -4,17 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 
-class WelcomeController
+class ArticlesController
 {
     /**
-     * Method that returns the welcome page.
+     * Method that returns the article page.
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function show()
+    public function show($id)
     {
-        return view('welcome', [
-            'articles' => Article::take(3)->latest()->get()
-        ]);
+        $article = Article::find($id);
+
+        return view('articles.show', ['article' => $article]);
     }
 }

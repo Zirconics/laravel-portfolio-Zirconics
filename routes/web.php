@@ -7,6 +7,7 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ArticlesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,6 @@ Route::get('profile', [ProfileController::class, 'show']);
 
 // Blog page
 Route::get('blogs/{blog}', [BlogController::class, 'show']);
+
+// Articles
+Route::get('articles/{article}', [ArticlesController::class, 'show']);

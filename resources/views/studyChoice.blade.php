@@ -1,9 +1,5 @@
 @extends('layout')
 
-@section('wildcard-addition')
-    /
-@endsection
-
 @section('content')
     <main>
 
@@ -29,7 +25,7 @@
                         <div class="card-header">Before the study</div>
                         <div class="card-body">
                             <p class="card-text">
-                                Before I started my study at HZ I visited several schools including HZ(HBO-ICT) and Avans(Informatica / Technical Informatics).
+                                Before I started my study at HZ I visited several schools including HZ(HBO-ICT) and Avans(Informatics / Technical Informatics).
                                 Besides visiting I also made several online study choice tests and tried to do some programming myself.
                             </p>
                         </div>
@@ -46,7 +42,7 @@
                             <p class="card-text">
                                 I chose HBO-ICT because I have always been interested in how computers and the programs on them work.
                                 I like to find out how the different components work together and to play around with this.
-                                Then I like to see what can be made with it all. I have also tried to make small games with the help of Youtube tutorials.
+                                Then I like to see what can be made with it all. I have also tried to make small games with the help of YouTube tutorials.
                             </p>
                         </div>
                     </div>
@@ -61,7 +57,7 @@
                         <div class="card-body">
                             <p class="card-text">
                                 What I want to do after college is not entirely clear to me yet.
-                                I am interested in software delopment, game development and Business IT Consultant.
+                                I am interested in software development, game development and Business IT Consultant.
                                 In the next four years I hope to have learned enough so that I can pursue one of the previously mentioned professions.
                             </p>
                         </div>
