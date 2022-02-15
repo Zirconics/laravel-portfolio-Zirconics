@@ -112,12 +112,12 @@
                         {{--                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"--}}
                         {{--                             data-bs-parent="#accordionFlushExample">--}}
                         {{--                            <div class="accordion-body">--}}
-                        {{--                                You can book a project space by going to <a href="https://portal.hz.nl/">portal.hz.nl</a> and clicking--}}
-                        {{--                                on "Selfservice Portal" in your personal menu.--}}
-                        {{--                                When logged into the Selfservice Portal click on "Make a reservation" and then click on the type of--}}
-                        {{--                                space you want to book.--}}
-                        {{--                                You will then be taken to a schedule where you can see when each room is available. Here you can also--}}
-                        {{--                                book rooms when they are not occupied.--}}
+{{--                                                        You can book a project space by going to <a href="https://portal.hz.nl/">portal.hz.nl</a> and clicking--}}
+{{--                                                        on "Selfservice Portal" in your personal menu.--}}
+{{--                                                        When logged into the Selfservice Portal click on "Make a reservation" and then click on the type of--}}
+{{--                                                        space you want to book.--}}
+{{--                                                        You will then be taken to a schedule where you can see when each room is available. Here you can also--}}
+{{--                                                        book rooms when they are not occupied.--}}
                         {{--                            </div>--}}
                         {{--                        </div>--}}
                         {{--                    </div>--}}
@@ -131,9 +131,9 @@
                         {{--                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"--}}
                         {{--                             data-bs-parent="#accordionFlushExample">--}}
                         {{--                            <div class="accordion-body">--}}
-                        {{--                                If you have a HZ student pass you can park your car at the following address: Poelendaelesingel, 4335--}}
-                        {{--                                JA Middelburg.--}}
-                        {{--                                You can enter the parking lot by scanning your HZ student pass at the entrance.--}}
+{{--                                                        If you have a HZ student pass you can park your car at the following address: Poelendaelesingel, 4335--}}
+{{--                                                        JA Middelburg.--}}
+{{--                                                        You can enter the parking lot by scanning your HZ student pass at the entrance.--}}
                         {{--                            </div>--}}
                         {{--                        </div>--}}
                         {{--                    </div>--}}
