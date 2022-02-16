@@ -36,8 +36,12 @@ Route::get('profile', [ProfileController::class, 'show']);
 
 // Blog page
 //Route::get('blogs/{blog}', [BlogController::class, 'blogs']);
+Route::get('blogs/create', [BlogController::class, 'create']);
+Route::post('/blogs', [BlogController::class, 'store']);
 Route::get('blogs/{article}', [BlogController::class, 'show']);
 Route::get('blogs', [BlogController::class, 'index']);
+//Route::get('blogs/{article}/edit', [BlogController::class, 'update']);
+//Route::delete('blogs/{article}', [BlogController::class, 'delete']);
 
 // Blogs
-Route::get('articles/{article}', [ArticlesController::class, 'show']);
+//Route::get('articles/{article}', [ArticlesController::class, 'show']);

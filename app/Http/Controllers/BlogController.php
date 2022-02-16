@@ -51,6 +51,38 @@ class BlogController
     {
         $article = Article::find($id);
 
-        return view('blogs.show', ['article' => $article]);
+        return view('/blogs.show', ['article' => $article]);
     }
+
+    public function create()
+    {
+        return view('/blogs.create');
+    }
+
+    public function store()
+    {
+        $blog = new Article();
+        $blog->title = request('title');
+        $blog->excerpt = request('excerpt');
+        $blog->body = request('body');
+        $blog->save();
+
+        return redirect('/blogs');
+    }
+
+    public function edit()
+    {
+
+    }
+
+    public function update()
+    {
+
+    }
+
+    public function delete()
+    {
+
+    }
+
 }
