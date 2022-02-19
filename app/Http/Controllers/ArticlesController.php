@@ -127,6 +127,4 @@ class ArticlesController
 
         return redirect('/articles');
     }
-
 }
-
