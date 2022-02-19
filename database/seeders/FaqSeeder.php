@@ -47,9 +47,9 @@ class FaqSeeder extends Seeder
             ],
             [
                 'question' => 'Q: What should you do if you are sick or have symptoms of corona virus?',
-                'answer' => 'If you are sick or have corona symptoms you absolutely must not come to school and notify your teacher
-                                through Teams.
-                                Make sure you continue to attend all classes to avoid falling behind. Y',
+                'answer' => 'If you are sick or have corona symptoms you absolutely must
+                             not come to school and notify your teacher through Teams.
+                             Make sure you continue to attend all classes to avoid falling behind. Y',
                 'link' => null,
                 'bootstrap_index' => 'Three',
             ],
@@ -67,9 +67,9 @@ class FaqSeeder extends Seeder
             ],
             [
                 'question' => 'Q: What are the instructions for parking your car in the HZ parking lot?',
-                'answer' => 'If you have a HZ student pass you can park your car at the following address: Poelendaelesingel, 4335
-                                                        JA Middelburg.
-                                                        You can enter the parking lot by scanning your HZ student pass at the entrance.',
+                'answer' => 'If you have a HZ student pass you can park your car
+                             at the following address: Poelendaelesingel, 4335 JA Middelburg.
+                             You can enter the parking lot by scanning your HZ student pass at the entrance.',
                 'link' => null,
                 'bootstrap_index' => 'Five',
             ],
