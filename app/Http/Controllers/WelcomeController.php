@@ -14,6 +14,7 @@ class WelcomeController
     public function show()
     {
         return view('welcome', [
+            'title' => 'Home',
             'articles' => Article::take(3)->latest()->get()
         ]);
     }

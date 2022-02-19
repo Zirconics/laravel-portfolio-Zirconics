@@ -15,6 +15,7 @@ class FaqController
     public function show()
     {
         return view('faq', [
+            'title' => 'Faqs',
             'faqs' => Faq::all()
         ]);
     }

@@ -9,7 +9,7 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css" />
 
-    <title>Kevin - Portfolio</title>
+    <title>{{ $title }}</title>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                     <a class="nav-link {{ Request::path() === 'faq' ? 'active' : '' }}" href="/faq">FaQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('blogs*') ? 'active' : '' }}" href="/blogs">Blog</a>
+                    <a class="nav-link {{ Request::is('articles*') ? 'active' : '' }}" href="/articles">Articles</a>
                 </li>
             </ul>
         </div>

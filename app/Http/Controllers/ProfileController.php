@@ -11,6 +11,8 @@ class ProfileController
      */
     public function show()
     {
-        return view('profile');
+        return view('profile', [
+            'title' => 'Profile'
+        ]);
     }
 }

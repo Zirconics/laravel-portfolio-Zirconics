@@ -1,9 +1,7 @@
 @extends('layout')
-
 @section('content')
     <main>
-
-        <!-- Big title of study choice blog page-->
+        <!-- Big title of articles page-->
         <div class="page-title">
             <div class="container">
                 <div class="row justify-content-center">
@@ -14,12 +12,12 @@
             </div>
         </div>
 
-
         <div class="container">
-
-            <button class="btn btn-light" id="blog_buttons" onclick="window.history.back()">Back</button>
-            <button class="btn btn-light" id="blog_buttons">Edit</button>
-            <button class="btn btn-light" id="blog_buttons">Delete</button>
+            <div class="buttons">
+                <a href="/articles/"><button class="btn btn-light" id="blog_buttons">Back</button></a>
+                <a href="/articles/{{ $article->id }}/edit"><button class="btn btn-light" id="blog_buttons">Edit</button></a>
+                <hr>
+            </div>
 
             <div class="row g-4 justify-content-center">
                 <div class="col-md-12">

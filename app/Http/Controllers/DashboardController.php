@@ -11,6 +11,8 @@ class DashboardController
      */
     public function show()
     {
-        return view('dashboard');
+        return view('dashboard', [
+            'title' => 'Dashboard'
+        ]);
     }
 }

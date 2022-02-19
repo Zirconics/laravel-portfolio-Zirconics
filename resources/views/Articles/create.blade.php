@@ -1,8 +1,7 @@
 @extends('layout')
-
 @section('content')
 
-    <!-- Big title of Blog creation page-->
+    <!-- Big title of article creation page-->
     <div class="page-title">
         <div class="container">
             <div class="row justify-content-center">
@@ -14,9 +13,9 @@
     </div>
 
     <div class="container">
-        <a href="/blogs"><button class="btn btn-light" id="blog_buttons">Cancel</button></a>
+        <a href="/articles"><button class="btn btn-light" id="blog_buttons">Cancel</button></a>
         <div class="row g4 justify-content-center">
-            <form method="POST" action="/blogs">
+            <form method="POST" action="/articles">
                 @csrf
                 <div>
                     <label class="h1-white-bold" for="title">Title:</label><br>
@@ -36,10 +35,7 @@
                 <div>
                     <button class="btn btn-light" id="blog_buttons">Submit</button>
                 </div>
-
-
             </form>
         </div>
     </div>
-
 @endsection
