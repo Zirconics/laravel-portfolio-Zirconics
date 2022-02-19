@@ -114,6 +114,12 @@ class ArticlesController
         return redirect('/articles/' . $article->id);
     }
 
+    /**
+     * Function that deletes articles from the database
+     *
+     * @param $article_id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function delete($article_id)
     {
         $article = Article::find($article_id);
