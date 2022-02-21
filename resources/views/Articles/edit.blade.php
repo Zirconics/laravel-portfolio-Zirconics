@@ -14,27 +14,32 @@
     <div class="container">
         <a href="/articles"><button class="btn btn-light" id="blog_buttons">Cancel</button></a>
         <div class="row g4 justify-content-center">
-            <form method="POST" action="/articles/{{ $article->id }}">
+            <form class="row g-3 was-validated" method="POST" action="/articles/{{ $article->id }}">
                 @csrf
                 @method('PUT')
-
-                <div>
-                    <label class="h1-white-bold" for="title">Title:</label><br>
-                    <input class="form-input" type="text" id="title" name="title" size="100" value="{{ $article->title }}"><br>
+                <div class="col-md-12">
+                    <label for="validationCustom01" class="form-label h1-white-bold">Title:</label>
+                    <input type="text" class="form-control" id="title" value="{{ $article->title }}" name="title" required>
+                    <div class="invalid-feedback">
+                        Please provide a title.
+                    </div>
                 </div>
-
-                <div>
-                    <label class="h1-white-bold" for="excerpt">Excerpt:</label><br>
-                    <input class="form-input" type="text" id="excerpt" name="excerpt" size="100" value="{{ $article->excerpt }}"><br>
+                <div class="col-md-12">
+                    <label for="validationCustom02" class="form-label h1-white-bold">Excerpt:</label>
+                    <input type="text" class="form-control" id="excerpt" value="{{ $article->excerpt }}" name="excerpt" required>
+                    <div class="invalid-feedback">
+                        Please provide an excerpt.
+                    </div>
                 </div>
-
-                <div>
-                    <label class="h1-white-bold" for="body">Body:</label><br>
-                    <textarea class="form-input" id="body" name="body">{{ $article->body }}</textarea><br>
+                <div class="col-md-12">
+                    <label for="validationCustom02" class="form-label h1-white-bold">Body:</label>
+                    <textarea type="text" class="form-input form-control" id="body" name="body" required>{{ $article->body }}</textarea>
+                    <div class="invalid-feedback">
+                        Please provide a body.
+                    </div>
                 </div>
-
-                <div>
-                    <button class="btn btn-light" id="blog_buttons">Submit</button>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
                 </div>
             </form>
 

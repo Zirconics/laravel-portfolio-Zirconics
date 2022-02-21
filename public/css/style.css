@@ -374,11 +374,7 @@ a.sideNav-button{
     font-weight: bold;
 }
 
-.form-input {
-    resize: both;
-    width: 75em;
-}
-
-textarea.form-input{
+textarea.form-input {
     height: 10em;
 }
+

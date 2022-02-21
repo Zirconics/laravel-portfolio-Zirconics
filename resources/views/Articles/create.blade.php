@@ -15,27 +15,26 @@
     <div class="container">
         <a href="/articles"><button class="btn btn-light" id="blog_buttons">Cancel</button></a>
         <div class="row g4 justify-content-center">
-
-            <form class="row g-3 needs-validation" method="POST" action="/articles">
+            <form class="row g-3 was-validated" method="POST" action="/articles">
                 @csrf
-                <div class="col-md-12 position-relative">
-                    <label for="validationTooltip01" class="form-label h1-white-bold">Title</label>
-                    <input type="text" class="form-control" id="validationTooltip01" name="title" required>
-                    <div class="invalid-tooltip">
+                <div class="col-md-12">
+                    <label for="validationCustom01" class="form-label h1-white-bold">Title:</label>
+                    <input type="text" class="form-control" id="title" placeholder="Enter title" name="title" required>
+                    <div class="invalid-feedback">
                         Please provide a title.
                     </div>
                 </div>
-                <div class="col-md-12 position-relative">
-                    <label for="validationTooltip02" class="form-label h1-white-bold">Excerpt</label>
-                    <input type="text" class="form-control" id="validationTooltip02" name="excerpt" required>
-                    <div class="invalid-tooltip">
+                <div class="col-md-12">
+                    <label for="validationCustom02" class="form-label h1-white-bold">Excerpt:</label>
+                    <input type="text" class="form-control" id="excerpt" placeholder="Enter excerpt" name="excerpt" required>
+                    <div class="invalid-feedback">
                         Please provide an excerpt.
                     </div>
                 </div>
-                <div class="col-md-12 position-relative">
-                    <label for="validationTooltip03" class="form-label h1-white-bold">Body</label>
-                    <input type="text" class="form-control" id="validationTooltip03" name="body" required>
-                    <div class="invalid-tooltip">
+                <div class="col-md-12">
+                    <label for="validationCustom02" class="form-label h1-white-bold">Body:</label>
+                    <textarea type="text" class="form-control form-input" id="body" placeholder="Enter body" name="body" required></textarea>
+                    <div class="invalid-feedback">
                         Please provide a body.
                     </div>
                 </div>
@@ -46,3 +45,4 @@
         </div>
     </div>
 @endsection
+

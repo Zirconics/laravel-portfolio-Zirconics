@@ -7,30 +7,6 @@ use App\Models\Article;
 class ArticlesController
 {
     /**
-     * Method that returns which blog view should be loaded.
-     *
-     * @param $blog
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function blogs($blog)
-    {
-        $blogs = [
-            'overview' => 'blog',
-            'Swot-Analyse' => 'swotAnalyse',
-            'Study-Choice' => 'studyChoice',
-            'Programming-Experience' => 'programmingExperience',
-            'ICT-Career' => 'ictCareer',
-            'First-Feedback' => 'firstFeedback'
-        ];
-
-        if (!array_key_exists($blog, $blogs)) {
-            abort(404, 'Sorry, that post was not found.');
-        }
-
-        return view($blogs[$blog]);
-    }
-
-    /**
      * Method that returns the index article page containing all the articles.
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
@@ -47,11 +23,11 @@ class ArticlesController
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function show($article_id)
+    public function show(Article $article)
     {
         return view('/articles.show', [
-            'title' => 'Article ' . $article_id,
-            'article' => Article::find($article_id)
+            'title' => 'Article - ' . $article->title,
+            'article' => $article
         ]);
     }
 
@@ -74,6 +50,12 @@ class ArticlesController
      */
     public function store()
     {
+        request()->validate([
+            'title' => 'required',
+            'excerpt' => 'required',
+            'body' => 'required'
+        ]);
+
         $article = new Article();
         $article->title = request('title');
         $article->excerpt = request('excerpt');
@@ -89,11 +71,11 @@ class ArticlesController
      * @param $article_id
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function edit($article_id)
+    public function edit(Article $article)
     {
         return view('articles.edit', [
             'title' => 'Edit Article',
-            'article' => Article::find($article_id)
+            'article' => $article
         ]);
     }
 
@@ -103,9 +85,14 @@ class ArticlesController
      * @param $article_id
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update($article_id)
+    public function update(Article $article)
     {
-        $article = Article::find($article_id);
+        request()->validate([
+            'title' => 'required',
+            'excerpt' => 'required',
+            'body' => 'required'
+        ]);
+
         $article->title = request('title');
         $article->excerpt = request('excerpt');
         $article->body = request('body');
@@ -120,9 +107,8 @@ class ArticlesController
      * @param $article_id
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function delete($article_id)
+    public function delete(Article $article)
     {
-        $article = Article::find($article_id);
         $article->delete();
 
         return redirect('/articles');
