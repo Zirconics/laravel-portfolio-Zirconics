@@ -20,17 +20,17 @@
 
                 <div>
                     <label class="h1-white-bold" for="title">Title:</label><br>
-                    <input type="text" id="title" name="title" size="100" value="{{ $article->title }}"><br>
+                    <input class="form-input" type="text" id="title" name="title" size="100" value="{{ $article->title }}"><br>
                 </div>
 
                 <div>
                     <label class="h1-white-bold" for="excerpt">Excerpt:</label><br>
-                    <input type="text" id="excerpt" name="excerpt" size="100" value="{{ $article->excerpt }}"><br>
+                    <input class="form-input" type="text" id="excerpt" name="excerpt" size="100" value="{{ $article->excerpt }}"><br>
                 </div>
 
                 <div>
                     <label class="h1-white-bold" for="body">Body:</label><br>
-                    <textarea id="body" name="body">{{ $article->body }}</textarea><br>
+                    <textarea class="form-input" id="body" name="body">{{ $article->body }}</textarea><br>
                 </div>
 
                 <div>

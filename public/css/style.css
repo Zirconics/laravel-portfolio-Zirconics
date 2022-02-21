@@ -373,3 +373,12 @@ a.sideNav-button{
     color: white;
     font-weight: bold;
 }
+
+.form-input {
+    resize: both;
+    width: 75em;
+}
+
+textarea.form-input{
+    height: 10em;
+}
