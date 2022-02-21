@@ -12,9 +12,9 @@
     </div>
 
     <div class="container">
-        <a href="/articles"><button class="btn btn-light" id="blog_buttons">Cancel</button></a>
+        <a href={{ route('articles.index') }}><button class="btn btn-light" id="blog_buttons">Cancel</button></a>
         <div class="row g4 justify-content-center">
-            <form class="row g-3 was-validated" method="POST" action="/articles/{{ $article->id }}">
+            <form class="row g-3 was-validated" method="POST" action={{ route('articles.update', $article) }}>
                 @csrf
                 @method('PUT')
                 <div class="col-md-12">
@@ -43,7 +43,7 @@
                 </div>
             </form>
 
-            <form method="POST" action="/articles/{{ $article->id }}">
+            <form method="POST" action={{ route('articles.delete', $article) }}>
                 @csrf
                 @method('DELETE')
                 <button class="btn btn-light" id="blog_buttons">Delete</button>

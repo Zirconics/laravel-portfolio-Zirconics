@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use Illuminate\Http\Request;
 
 class ArticlesController
 {
@@ -48,27 +49,17 @@ class ArticlesController
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function store()
+    public function store(Request $request)
     {
-        request()->validate([
-            'title' => 'required',
-            'excerpt' => 'required',
-            'body' => 'required'
-        ]);
+        Article::create($this->validateArticle($request));
 
-        $article = new Article();
-        $article->title = request('title');
-        $article->excerpt = request('excerpt');
-        $article->body = request('body');
-        $article->save();
-
-        return redirect('/articles');
+        return redirect(route('articles.index'));
     }
 
     /**
      * Function that retrieves article data out of the database
      *
-     * @param $article_id
+     * @param Article $article
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function edit(Article $article)
@@ -82,29 +73,20 @@ class ArticlesController
     /**
      * Function that stores updated data in the database
      *
-     * @param $article_id
+     * @param Article $article
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Article $article)
+    public function update(Request $request, Article $article)
     {
-        request()->validate([
-            'title' => 'required',
-            'excerpt' => 'required',
-            'body' => 'required'
-        ]);
+        $article->update($this->validateArticle($request));
 
-        $article->title = request('title');
-        $article->excerpt = request('excerpt');
-        $article->body = request('body');
-        $article->save();
-
-        return redirect('/articles/' . $article->id);
+        return redirect(route('articles.show', $article));
     }
 
     /**
      * Function that deletes articles from the database
      *
-     * @param $article_id
+     * @param Article $article
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function delete(Article $article)
@@ -112,5 +94,17 @@ class ArticlesController
         $article->delete();
 
         return redirect('/articles');
+    }
+
+    /**
+     * @return array
+     */
+    public function validateArticle(Request $request): array
+    {
+        return $request->validate([
+            'title' => 'required',
+            'excerpt' => 'required',
+            'body' => 'required'
+        ]);
     }
 }

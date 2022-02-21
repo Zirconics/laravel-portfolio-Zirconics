@@ -14,8 +14,8 @@
 
         <div class="container">
             <div class="buttons">
-                <a href="/articles/"><button class="btn btn-light" id="blog_buttons">Back</button></a>
-                <a href="/articles/{{ $article->id }}/edit"><button class="btn btn-light" id="blog_buttons">Edit</button></a>
+                <a href={{ route('articles.index') }}><button class="btn btn-light" id="blog_buttons">Back</button></a>
+                <a href={{ route('articles.edit', $article) }}><button class="btn btn-light" id="blog_buttons">Edit</button></a>
                 <hr>
             </div>
 

@@ -36,13 +36,13 @@ Route::get('profile', [ProfileController::class, 'show']);
 
 // Article page
 // Create
-Route::get('articles/create', [ArticlesController::class, 'create']);
-Route::post('/articles', [ArticlesController::class, 'store']);
+Route::get('articles/create', [ArticlesController::class, 'create'])->name('articles.create');
+Route::post('/articles', [ArticlesController::class, 'store'])->name('articles.store');
 // Read
-Route::get('articles/{article}', [ArticlesController::class, 'show']);
-Route::get('articles', [ArticlesController::class, 'index']);
+Route::get('articles/{article}', [ArticlesController::class, 'show'])->name('articles.show');
+Route::get('articles', [ArticlesController::class, 'index'])->name('articles.index');
 // Update
-Route::get('articles/{article}/edit', [ArticlesController::class, 'edit']);
-Route::put('/articles/{article}', [ArticlesController::class, 'update']);
+Route::get('articles/{article}/edit', [ArticlesController::class, 'edit'])->name('articles.edit');
+Route::put('/articles/{article}', [ArticlesController::class, 'update'])->name('articles.update');
 // Delete
-Route::delete('articles/{article}', [ArticlesController::class, 'delete']);
+Route::delete('articles/{article}', [ArticlesController::class, 'delete'])->name('articles.delete');

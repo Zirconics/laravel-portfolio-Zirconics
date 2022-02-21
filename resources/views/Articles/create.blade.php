@@ -13,9 +13,9 @@
     </div>
 
     <div class="container">
-        <a href="/articles"><button class="btn btn-light" id="blog_buttons">Cancel</button></a>
+        <a href={{ route('articles.index') }}><button class="btn btn-light" id="blog_buttons">Cancel</button></a>
         <div class="row g4 justify-content-center">
-            <form class="row g-3 was-validated" method="POST" action="/articles">
+            <form class="row g-3 was-validated" method="POST" action={{ route('articles.index') }}>
                 @csrf
                 <div class="col-md-12">
                     <label for="validationCustom01" class="form-label h1-white-bold">Title:</label>
