@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10">
-                    <h1 id="page-title-text">Create a new blog</h1>
+                    <h1 id="page-title-text">Create a new article</h1>
                 </div>
             </div>
         </div>

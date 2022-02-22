@@ -17,6 +17,7 @@ class CreateGradesTable extends Migration
             $table->bigIncrements('id');
             $table->string('course_name');
             $table->string('test_name');
+            $table->decimal('ec');
             $table->decimal('lowest_passing_grade')
                 ->default(5.5)
                 ->comment('Lowest grade to pass so average calculations can be applied');

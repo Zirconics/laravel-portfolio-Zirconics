@@ -201,6 +201,7 @@ ul.Summary a:hover {
 
 .dashboardContent {
     padding-top: 40px;
+    padding-bottom: 10em;
 }
 
 div.dark-Sidenav {
@@ -377,4 +378,11 @@ a.sideNav-button{
 textarea.form-input {
     height: 10em;
 }
+
+.progress-bar-position{
+    margin-bottom: 3.5em;
+    margin-top: 7em;
+}
+
+
 
