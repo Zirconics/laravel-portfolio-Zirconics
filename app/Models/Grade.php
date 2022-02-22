@@ -4,11 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Carbon;
 
 class Grade extends Model
 {
     use HasFactory;
+    protected $fillable = ['course_name', 'test_name', 'ec', 'best_grade'];
 
     /**
      * Function that adds a result

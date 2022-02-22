@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GradeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\DashboardController;
@@ -24,8 +25,20 @@ Route::get('/posts/{post}', [PostController::class, 'show']);
 // Index page
 Route::get('/', [WelcomeController::class, 'show']);
 
-// Dashboard page
-Route::get('dashboard', [DashboardController::class, 'show']);
+
+// Grades page
+// Create
+Route::get('grades/create', [GradeController::class, 'create'])->name('grades.create');
+Route::post('/grades', [GradeController::class, 'store'])->name('grades.store');
+// Read
+Route::get('grades/{grade}', [GradeController::class, 'show'])->name('grades.show');
+Route::get('grades', [GradeController::class, 'index'])->name('grades.index');
+// Update
+Route::get('grades/{grade}/edit', [GradeController::class, 'edit'])->name('grades.edit');
+Route::put('/grades/{grade}', [GradeController::class, 'update'])->name('grades.update');
+// Delete
+Route::delete('grades/{grade}', [GradeController::class, 'delete'])->name('grades.delete');
+
 
 // FaQ page
 Route::get('faq', [FaqController::class, 'show']);

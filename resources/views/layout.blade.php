@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::path() === 'dashboard' ? 'active' : '' }}" href="/dashboard">Dashboard</a>
+                    <a class="nav-link {{ Request::is('grades*') ? 'active' : '' }}" href={{ route('grades.index') }}>Grades</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ Request::path() === 'profile' ? 'active' : '' }}" href="/profile">Profile</a>
