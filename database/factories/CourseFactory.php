@@ -15,7 +15,7 @@ class CourseFactory extends Factory
     {
         return [
             'course_name' => $this->faker->title,
-            'credits' => $this->faker->numberBetween(1,10)
+            'credits' => $this->faker->numberBetween(1, 10),
         ];
     }
 }
