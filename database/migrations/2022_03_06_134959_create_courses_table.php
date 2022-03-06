@@ -15,9 +15,10 @@ class CreateCoursesTable extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('CU_code');
+            $table->string('course_name');
             $table->decimal('credits');
-            $table->timestamp('passed_at');
+            $table->timestamp('passed_at')->nullable()
+                ->comment('Date that all grades related to this course are higher than 5.5');;
             $table->timestamps();
         });
     }

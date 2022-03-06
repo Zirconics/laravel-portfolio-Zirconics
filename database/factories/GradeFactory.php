@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Course;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class GradeFactory extends Factory
@@ -14,7 +15,9 @@ class GradeFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'course_id' => factory(Course::class),
+            'test_name' => $this->faker->title,
+            'best_grade' => $this->faker->numberBetween(1,10),
         ];
     }
 }
