@@ -29,4 +29,14 @@ class Grade extends Model
             return 'Previous Result was better';
         }
     }
+
+    /**
+     * Function that has a relation with the Course model
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function course()
+    {
+        return $this->belongsTo(Course::class);
+    }
 }
