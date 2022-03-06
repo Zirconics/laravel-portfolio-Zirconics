@@ -17,7 +17,7 @@ class GradeFactory extends Factory
         return [
             'course_id' => factory(Course::class),
             'test_name' => $this->faker->title,
-            'best_grade' => $this->faker->numberBetween(1,10),
+            'best_grade' => $this->faker->numberBetween(1,10)
         ];
     }
 }

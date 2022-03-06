@@ -22,30 +22,40 @@ class ArticleSeeder extends Seeder
                 'body' => 'Strengths: perseverance (If I want something, then I try my best to achieve it),
                            Focused (can work for long time on 1 task/assignment),
                            Team player (besides working independently I can also work well in groups).
-                           Weaknesses: Too focused (too focused on 1 task, sometimes causing me to overlook other (smaller) tasks),
+                           Weaknesses: Too focused (too focused on 1 task,
+                           sometimes causing me to overlook other (smaller) tasks),
                            Too flexible towards uncooperative group members.
                            Opportunities: Learning lots in the field of ICT.
-                           Threats: demotivated by group members (If I am grouped with unmotivated students I tend to be less motivated).'
+                           Threats: demotivated by group members
+                           (If I am grouped with unmotivated students I tend to be less motivated).'
             ],
             [
                 'title' => 'Study Choice',
                 'excerpt' => 'Why did I decide to study HBO-ICT',
                 'body' => 'Before I started my study at HZ I visited several schools including
                            HZ(HBO-ICT) and Avans(Informatics / Technical Informatics).
-                           Besides visiting I also made several online study choice tests and tried to do some programming myself.
-                           This made me chose HBO-ICT because I have always been interested in how computers and the programs on them work.
-                           That is because I like to find out how the different components work together and to play around with them.
-                           Then I like to see what can be made with it all. I have also tried to make small games with the help of YouTube tutorials.'
+                           Besides visiting I also made several online study choice
+                           tests and tried to do some programming myself.
+                           This made me chose HBO-ICT because I have always been
+                           interested in how computers and the programs on them work.
+                           That is because I like to find out how the different
+                           components work together and to play around with them.
+                           Then I like to see what can be made with it all.
+                           I have also tried to make small games with the help of YouTube tutorials.'
             ],
             [
                 'title' => 'ICT Career',
                 'excerpt' => 'ICT career day on HZ location with Hacker One',
                 'body' => 'HackerOne focuses a lot on cyber security,
-                           HackerOne is a vulnerability coordination and bug bounty platform that connects businesses with penetration testers and cybersecurity researchers.
-                           They do this to ensure that systems do not contain leaks. they have done this for Nintendo, PayPal,
-                           Starbucks and even the Department of Defense in America, among others.The roles in the company are very divided.
+                           HackerOne is a vulnerability coordination and bug bounty platform
+                           that connects businesses with penetration testers and cybersecurity researchers.
+                           They do this to ensure that systems do not contain leaks.
+                           they have done this for Nintendo, PayPal,
+                           Starbucks and even the Department of Defense in America,
+                           among others.The roles in the company are very divided.
                            For example, there are several groups that generally consist of eight people.
-                           The various roles within the company involve: Engineer, Technical Director, Security Engineer,
+                           The various roles within the company involve:
+                           Engineer, Technical Director, Security Engineer,
                            Security Consultant, Security Software Developer, Software Developer.'
             ],
             [
