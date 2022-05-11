@@ -14,7 +14,7 @@
 <div class="container">
     <a href={{ route('grades.show', $grade) }}><button class="btn btn-light" id="blog_buttons">Cancel</button></a>
     <div class="row g4 justify-content-center">
-        <form class="row g-3 was-validated" method="POST" action={{ route('grades.show', $grade) }}>
+        <form class="row g-3 was-validated" method="POST" action={{ route('grades.update', $grade) }}>
             @csrf
             @method('PUT')
             <div class="col-md-12">

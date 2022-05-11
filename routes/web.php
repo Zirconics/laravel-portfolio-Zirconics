@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ErrorController;
 use App\Http\Controllers\GradeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
