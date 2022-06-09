@@ -14,7 +14,6 @@ class FaqController
      */
     public function show()
     {
-        abort(404);
         return view('faq', [
             'title' => 'Faqs',
             'faqs' => Faq::all()

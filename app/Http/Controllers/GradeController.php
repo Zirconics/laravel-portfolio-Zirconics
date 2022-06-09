@@ -27,7 +27,6 @@ class GradeController extends Controller
      */
     public function create()
     {
-        abort(500);
         return view('/grades.create', [
             'title' => 'Create Grade'
         ]);
