@@ -18,11 +18,11 @@
             @csrf
             @method('PUT')
             <div class="col-md-12">
-                <label for="validationCustom01" class="form-label h1-white-bold">Course name:</label>
-                <input type="text" class="form-control" id="course_name" placeholder="Enter course name"
-                       value="{{ $grade->course_name }}" name="course_name" required>
+                <label for="validationCustom01" class="form-label h1-white-bold">Course id:</label>
+                <input type="text" class="form-control" id="course_id" placeholder="Enter course id"
+                       value="{{ $grade->course_id }}" name="course_id" required>
                 <div class="invalid-feedback">
-                    Please provide a course name.
+                    Please provide a course id.
                 </div>
             </div>
             <div class="col-md-12">
@@ -33,14 +33,14 @@
                     Please provide a test name.
                 </div>
             </div>
-            <div class="col-md-3">
-                <label for="validationCustom03" class="form-label h1-white-bold">EC:</label>
-                <input type="number" class="form-control" id="ec" placeholder="Enter EC"
-                       value="{{ $grade->ec }}" name="ec" required>
-                <div class="invalid-feedback">
-                    Please provide a EC value.
-                </div>
-            </div>
+{{--            <div class="col-md-3">--}}
+{{--                <label for="validationCustom03" class="form-label h1-white-bold">EC:</label>--}}
+{{--                <input type="number" class="form-control" id="ec" placeholder="Enter EC"--}}
+{{--                       value="{{ $grade->ec }}" name="ec" required>--}}
+{{--                <div class="invalid-feedback">--}}
+{{--                    Please provide a EC value.--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <div class="col-md-3">
                 <label for="validationCustom04" class="form-label h1-white-bold">Grade:</label>
                 <input type="text" class="form-control" id="best_grade" placeholder="Enter grade"

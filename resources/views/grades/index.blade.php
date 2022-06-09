@@ -80,7 +80,7 @@
                     <div class="col-md-4 grades">
                         <div class="card bg-light mb-3">
                             <div class="card-header">
-                                <a class="text-link-hover-black" href="{{ route('grades.show', $grade) }}">{{ $grade->course_name }}</a>
+                                <a class="text-link-hover-black" href="{{ route('grades.show', $grade) }}">{{ $grade->course_id }}</a>
                             </div>
                             <div class="card-body">
                                 <p>{{ $grade->test_name }}</p>
