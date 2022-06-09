@@ -14,8 +14,8 @@ class GradeController extends Controller
      */
     public function index()
     {
-        return view('grades.index', [
-            'title' => 'Grades',
+        return view('/grades.index', [
+            'title' => 'grades',
             'grades' => Grade::all()
         ]);
     }
@@ -27,7 +27,7 @@ class GradeController extends Controller
      */
     public function create()
     {
-        return view('grades.create', [
+        return view('/grades.create', [
             'title' => 'Create Grade'
         ]);
     }
@@ -53,7 +53,7 @@ class GradeController extends Controller
      */
     public function show(Grade $grade)
     {
-        return view('grades.show', [
+        return view('/grades.show', [
             'title' => 'Grade - ' . $grade->course_name,
             'grade' => $grade
         ]);
@@ -97,7 +97,7 @@ class GradeController extends Controller
     {
         $grade->delete();
 
-        return redirect('grades');
+        return redirect('/grades');
     }
 
     /**

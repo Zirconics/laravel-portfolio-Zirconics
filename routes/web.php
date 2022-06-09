@@ -27,7 +27,7 @@ Route::get('/posts/{post}', [PostController::class, 'show']);
 Route::get('/', [WelcomeController::class, 'show']);
 
 
-// Grades page
+// grades page
 // Create
 Route::get('grades/create', [GradeController::class, 'create'])->name('grades.create');
 Route::post('/grades', [GradeController::class, 'store'])->name('grades.store');
