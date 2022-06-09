@@ -26,11 +26,6 @@ class CreateGradesTable extends Migration
                 ->nullable()
                 ->comment('Date that the grade was larger than or equal to the lowest passing grade');
             $table->timestamps();
-
-            $table->foreign('course_id')
-                ->references('id')
-                ->on('courses')
-                ->onDelete('cascade');
         });
     }
 
