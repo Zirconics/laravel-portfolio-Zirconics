@@ -15,7 +15,7 @@ class CreateGradesTable extends Migration
     {
         Schema::create('grades', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('course_id');
+            $table->unsignedBigInteger('course_id')->nullable();
             $table->string('test_name');
             $table->decimal('lowest_passing_grade')
                 ->default(5.5)
