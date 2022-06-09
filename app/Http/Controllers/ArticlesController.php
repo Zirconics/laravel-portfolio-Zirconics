@@ -15,7 +15,7 @@ class ArticlesController
     public function index()
     {
         return view('articles.index', [
-            'title' => 'Articles',
+            'title' => 'articles',
             'articles' => Article::latest()->get()]);
     }
 
