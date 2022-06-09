@@ -16,93 +16,78 @@ class GradeSeeder extends Seeder
     {
         DB::table('grades')-> insert([
             [
-                'course_name' => 'Program and Career Orientation',
+                'course_id' => '0',
                 'test_name' => 'Assessment',
-                'ec' => 2.,
                 'best_grade' => 9.8,
             ],
             [
-                'course_name' => 'Computer Science Basics',
+                'course_id' => '1',
                 'test_name' => 'Case Study',
-                'ec' => 5,
                 'best_grade' => 7.7,
             ],
             [
-                'course_name' => 'Programming Basics',
+                'course_id' => '2',
                 'test_name' => 'Case Study',
-                'ec' => 5,
                 'best_grade' => 9,
             ],
             [
-                'course_name' => 'Object Oriented Programming',
+                'course_id' => '3',
                 'test_name' => 'Case Study',
-                'ec' => 10,
                 'best_grade' => 9.5,
             ],
             [
-                'course_name' => 'Object Oriented Programming',
+                'course_id' => '4',
                 'test_name' => 'Project',
-                'ec' => 10,
                 'best_grade' => 8.5,
             ],
             [
-                'course_name' => 'Framework Development 1',
+                'course_id' => '5',
                 'test_name' => 'Case Study',
-                'ec' => 5,
                 'best_grade' => 0
             ],
             [
-                'course_name' => 'Framework Project 1',
+                'course_id' => '6',
                 'test_name' => 'Project',
-                'ec' => 7.5,
                 'best_grade' => 0
             ],
             [
-                'course_name' => 'Framework Project 1',
+                'course_id' => '7',
                 'test_name' => 'Assessment',
-                'ec' => 7.5,
                 'best_grade' => 0
             ],
             [
-                'course_name' => 'Framework Project 1',
+                'course_id' => '8',
                 'test_name' => 'Report',
-                'ec' => 7.5,
                 'best_grade' => 0
             ],
             [
-                'course_name' => 'Framework Project 2',
+                'course_id' => '9',
                 'test_name' => 'Portfolio',
-                'ec' => 10,
                 'best_grade' => 0
             ],
             [
-                'course_name' => 'Framework Project 2',
+                'course_id' => '10',
                 'test_name' => 'Project',
-                'ec' => 10,
                 'best_grade' => 0
             ],
             [
-                'course_name' => 'Framework Project 2',
+                'course_id' => '11',
                 'test_name' => 'Assessment',
-                'ec' => 10,
                 'best_grade' => 0
             ],
             [
-                'course_name' => 'Personality 1',
+                'course_id' => '12',
                 'test_name' => 'Portfolio',
-                'ec' => 1.25,
                 'best_grade' => 0
             ],
             [
-                'course_name' => 'Personality 2',
+                'course_id' => '13',
                 'test_name' => 'Portfolio',
-                'ec' => 1.25,
                 'best_grade' => 0,
             ],
             [
-                'course_name' => 'Personal Professional Development',
+                'course_id' => '14',
                 'test_name' => 'Portfolio',
-                'ec' => 12.5,
                 'best_grade' => 0,
             ]
         ]);

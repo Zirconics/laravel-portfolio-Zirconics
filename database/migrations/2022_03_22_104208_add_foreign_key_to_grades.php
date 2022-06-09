@@ -13,12 +13,12 @@ class AddForeignKeyToGrades extends Migration
      */
     public function up()
     {
-        Schema::table('grades', function (Blueprint $table) {
-            $table->foreign('course_id')
-                ->references('id')
-                ->on('courses')
-                ->onDelete('cascade');
-        });
+//        Schema::table('grades', function (Blueprint $table) {
+//            $table->foreign('course_id')
+//                ->references('id')
+//                ->on('courses')
+//                ->onDelete('cascade');
+//        });
     }
 
     /**
