@@ -72,7 +72,9 @@
         </div>
 
         <div class="container grades-list">
-            <a href={{ route('grades.create') }}><button class="btn btn-light" id="blog_buttons">Create</button></a>
+            @if(Auth::check())
+                <a href={{ route('grades.create') }}><button class="btn btn-light" id="blog_buttons">Create</button></a>
+            @endif
             <hr>
             <div class="row g4 justify-content-center">
 

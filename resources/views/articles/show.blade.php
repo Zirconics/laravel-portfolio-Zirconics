@@ -15,7 +15,9 @@
         <div class="container">
             <div class="buttons">
                 <a href={{ route('articles.index') }}><button class="btn btn-light" id="blog_buttons">Back</button></a>
-                <a href={{ route('articles.edit', $article) }}><button class="btn btn-light" id="blog_buttons">Edit</button></a>
+                @if(Auth::check())
+                    <a href={{ route('articles.edit', $article) }}><button class="btn btn-light" id="blog_buttons">Edit</button></a>
+                @endif
                 <hr>
             </div>
 
