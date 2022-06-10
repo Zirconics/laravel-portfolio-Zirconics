@@ -9,6 +9,7 @@
                     <h1 class="intro-h1">An aspiring software engineer that likes to make things look pretty</h1>
                     <p class="intro-subtext">Studying HBO-ICT at <a href="https://www.hz.nl" class="text-link-hover"> HZ
                             University of Applied Sciences. </a></p>
+                    <p class="intro-subtext">Continious Deployment is workey</p>
                 </div>
             </div>
         </div>
