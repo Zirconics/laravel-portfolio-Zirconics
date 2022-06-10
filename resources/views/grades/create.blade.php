@@ -39,7 +39,7 @@
 {{--                </div>--}}
                 <div class="col-md-3">
                     <label for="validationCustom04" class="form-label h1-white-bold">Grade:</label>
-                    <input type="number" class="form-control" id="best_grade" placeholder="Enter grade" name="best_grade" required>
+                    <input type="number" step="0.1" class="form-control" id="best_grade" placeholder="Enter grade" name="best_grade" required>
                     <div class="invalid-feedback">
                         If grade is not known enter 0.
                     </div>

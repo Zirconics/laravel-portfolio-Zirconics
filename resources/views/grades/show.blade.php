@@ -22,16 +22,10 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-md-12">
                     <div class="card bg-light mb-3">
-                        <div class="card-header">{{ $grade->course_name }}  {{ $grade->test_name }}</div>
+                        <div class="card-header">{{ $grade->test_name }}</div>
                         <div class="card-body">
                             <p class="card-text">
-                                EC: {{ $grade->ec }}
-                            </p>
-                            <p class="card-text">
                                 Grade: {{ $grade->best_grade }}
-                            </p>
-                            <p class="card-text">
-                                Passed on: {{ $grade->passed_at }}
                             </p>
                         </div>
                     </div>
