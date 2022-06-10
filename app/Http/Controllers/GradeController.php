@@ -82,7 +82,7 @@ class GradeController extends Controller
      */
     public function update(Request $request, Grade $grade)
     {
-        $grade->addResult($request->best_grade);
+        $grade->update($this->validateGrade($request));
 
         return redirect(route('grades.show', $grade));
     }
