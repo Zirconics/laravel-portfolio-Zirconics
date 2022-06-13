@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\JikanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ErrorController;
 use App\Http\Controllers\GradeController;
@@ -66,3 +67,6 @@ Route::get('articles/{article}/edit', [ArticlesController::class, 'edit'])->name
 Route::put('/articles/{article}', [ArticlesController::class, 'update'])->name('articles.update');
 // Delete
 Route::delete('articles/{article}', [ArticlesController::class, 'delete'])->name('articles.delete');
+
+// Jikan API
+Route::get('jikan', [JikanController::class, 'index'])->name('jikan.index');

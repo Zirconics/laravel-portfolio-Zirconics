@@ -42,6 +42,9 @@
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('articles*') ? 'active' : '' }}" href="/articles">Articles</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ Request::path() === 'jikan' ? 'active' : '' }}" href="/jikan">Jikan</a>
+                </li>
                 <li class="nav-item dropdown">
                     @if(Auth::check())
                         <div class="dropdown">
