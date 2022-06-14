@@ -404,6 +404,6 @@ textarea.form-input {
     color: white;
 }
 
-.api-list {
-    top: -500px; !important;
+ul.api-list {
+    padding-left: 2rem;
 }

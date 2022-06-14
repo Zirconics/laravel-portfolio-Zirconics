@@ -31,9 +31,11 @@ function writeToTheDom(jikanData) {
     h2.innerHTML = `Anime Statistics:`;
     ph.append(h2);
     const ul = document.createElement("ul");
+    ul.className = "api-list";
 
     for (const stats in jikanData.data.anime) {
         const li = document.createElement("li");
+        li.className = "api-list";
         if (jikanData.data.anime.hasOwnProperty(stats)) {
             const value = jikanData.data.anime[stats];
             li.innerHTML = `${stats}: ${value}`;
