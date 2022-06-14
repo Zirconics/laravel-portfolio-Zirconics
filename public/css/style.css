@@ -407,3 +407,7 @@ textarea.form-input {
 ul.api-list {
     padding-left: 2rem;
 }
+
+form {
+    padding-bottom: 10vh;
+}
