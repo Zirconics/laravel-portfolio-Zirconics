@@ -18,33 +18,33 @@
             <form class="row g-3 needs-validation" method="POST" action="{{ route('articles.index') }}" novalidate>
                 @csrf
                 <div class="col-md-12">
-                    <label for="validationCustom01" class="form-label h1-white-bold">Title:</label>
+                    <div class="d-flex justify-content-between">
+                        <label for="validationCustom01" class="form-label h1-white-bold">Title:<span class="red"> *</span></label>
+                        <p class="text-white"><span class="red">* </span>= verplicht</p>
+                    </div>
                     <input type="text" class="form-control" id="title" placeholder="Enter title" name="title" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
                     <div class="invalid-feedback">
-                        Please provide a title.
+                        <span class="validation-feedback">
+                            Please provide a title.
+                        </span>
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <label for="validationCustom02" class="form-label h1-white-bold">Excerpt:</label>
+                    <label for="validationCustom02" class="form-label h1-white-bold">Excerpt:<span class="red"> *</span></label>
                     <input type="text" class="form-control" id="excerpt" placeholder="Enter excerpt" name="excerpt" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
                     <div class="invalid-feedback">
-                        Please provide an excerpt.
+                        <span class="validation-feedback">
+                            Please provide an excerpt that briefly explains your post.
+                        </span>
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <label for="validationCustom02" class="form-label h1-white-bold">Body:</label>
+                    <label for="validationCustom02" class="form-label h1-white-bold">Body:<span class="red"> *</span></label>
                     <textarea type="text" class="form-control form-input" id="body" placeholder="Enter body" name="body" required></textarea>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
                     <div class="invalid-feedback">
-                        Please provide a body.
+                        <span class="validation-feedback">
+                            Please provide a body.
+                        </span>
                     </div>
                 </div>
                 <div class="col-12">

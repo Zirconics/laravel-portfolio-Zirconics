@@ -411,3 +411,13 @@ ul.api-list {
 form {
     padding-bottom: 10vh;
 }
+
+.validation-feedback {
+    border: 5px red;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.red {
+    color: red;
+}
